@@ -1,0 +1,20 @@
+ # Implement a program that requests three strings from the user. Your program should concatenate the first two strings in the reverse order and compare the concatenated string with the third string. If they are equal, your program should print “They are equal”, otherwise, the program prints “They are not equal”. A sample run is shown below:
+## Enter first string: you!
+## Enter second string: Thank Enter third string: Thankyou! They are equal
+## Enter string 1: you2!
+## Enter second string: Thank Enter third string: Thankyou! They are not equal
+
+#Ask for user input of 3 strings
+string1 = input("Enter string 1: ")
+string2 = input("Enter string 2: ")
+string3 = input("Enter string 3: ")
+
+resString1 = string1+string2  # combine input string
+resString2 = string2+string1  # combine input string  
+if resString1 == string3:     # set conditions 
+    print("They are equal")
+elif resString2 == string3:
+    print("They are also equal")
+else:
+    print("They are not equal")
+    print("They are not equal") 
